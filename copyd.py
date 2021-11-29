@@ -229,7 +229,7 @@ for i in range(4):
 
 if solve_ode:
     customlegend.append(Line2D([0], [0], color="k", linestyle="-", label="N-body"))
-    customlegend.append(Line2D([0], [0], color="k", linestyle=":", label="SEIR model"))
+    customlegend.append(Line2D([0], [0], color="k", linestyle=":", label="SEIR ODEs"))
 
 ax.legend(handles=customlegend)
 plt.savefig("summary_plots/number_evolution"+sufix+".png", bbox_inches='tight', dpi=300)
